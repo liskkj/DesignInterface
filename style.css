@@ -6,104 +6,105 @@
   <title>Portal do Angel Batista</title>
   <style>
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #fffde7, #fff176, #fdd835);
-        color: #212121;
-        text-align: center;
-        line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eeeeee;
+      text-align: center;
+      line-height: 1.6;
     }
 
     header {
-        background: linear-gradient(135deg, #b71c1c, #d32f2f, #e53935);
-        color: white;
-        padding: 25px 15px;
-        text-align: center;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+      background-color: #1e1e1e;
+      padding: 30px 20px;
+      border-bottom: 4px solid #c62828;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     }
 
     header h2 {
-        font-size: 2.2em;
-        letter-spacing: 3px;
-        font-weight: bold;
-        color: #fffde7;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      font-size: 2.5em;
+      color: #eeeeee;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     header nav {
-        margin-top: 12px;
+      margin-top: 15px;
     }
 
     header nav a {
-        display: inline-block;
-        color: #fffde7;
-        margin: 0 12px;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 8px 16px;
-        border-radius: 8px;
-        transition: all 0.3s ease;
+      color: #c62828;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      transition: 0.3s;
     }
 
     header nav a:hover {
-        background: rgba(255, 241, 118, 0.9);
-        color: #b71c1c;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      border: 1px solid #c62828;
+      background-color: #2c2c2c;
     }
 
     main {
-        padding: 30px 15px;
+      padding: 40px 20px;
     }
 
     main h1 {
-        color: #d32f2f;
-        margin-bottom: 15px;
+      font-size: 2em;
+      color: #f44336;
+      margin-bottom: 20px;
     }
 
-    footer {
-        background: #fff176;
-        padding: 15px;
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #5d4037;
-        box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+    main p {
+      color: #cccccc;
     }
 
     .carros {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 25px;
-        margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
     }
 
     .carros img {
-        width: 250px;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(229, 57, 53, 0.4);
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      width: 260px;
+      border-radius: 8px;
+      border: 2px solid #c62828;
+      filter: grayscale(40%);
+      transition: transform 0.3s ease, filter 0.3s ease;
     }
 
     .carros img:hover {
-        transform: scale(1.08) rotate(1deg);
-        box-shadow: 0 12px 28px rgba(229, 57, 53, 0.6);
+      transform: scale(1.05);
+      filter: grayscale(0%);
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #9e9e9e;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+      border-top: 1px solid #333;
     }
 
     @media (max-width: 768px) {
-        header h2 {
-            font-size: 1.6em;
-        }
+      header h2 {
+        font-size: 1.8em;
+      }
 
-        .carros img {
-            width: 180px;
-        }
+      .carros img {
+        width: 180px;
+      }
     }
   </style>
 </head>
@@ -112,22 +113,22 @@
     <h2>Portal do Angel Batista</h2>
     <nav>
       <a href="#">Início</a>
-      <a href="#">Galeria</a>
-      <a href="#">Sobre</a>
+      <a href="#">Casos</a>
+      <a href="#">Arquivo</a>
     </nav>
   </header>
 
   <main>
-    <h1>Bem-vindo ao Mundo do Angel Batista!</h1>
-    <p>Aqui você encontra o Angel Batista, o protagonista mais protagonista que o própio protagonista.</p>
+    <h1>Dossiê Angel Batista</h1>
+    <p>Bem-vindo ao universo investigativo com um toque latino — crimes, evidências e estilo inconfundível.</p>
 
     <div class="carros">
-      <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Minion na floresta">
+      <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Angel Batista">
     </div>
   </main>
 
   <footer>
-    Desenvolvido por <strong>Ellis Moura</strong>
+    Arquivado por <strong>Ellis Moura</strong> · Inspiração: Angel Batista (Dexter)
   </footer>
 </body>
 </html>
