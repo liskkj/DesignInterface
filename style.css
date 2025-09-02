@@ -13,14 +13,14 @@
 
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #fff8e1, #ffe082, #ffeb3b);
-        color: #333;
+        background: linear-gradient(135deg, #fffde7, #fff176, #fdd835);
+        color: #212121;
         text-align: center;
         line-height: 1.6;
     }
 
     header {
-        background: linear-gradient(135deg, #b71c1c, #c62828, #d32f2f);
+        background: linear-gradient(135deg, #b71c1c, #d32f2f, #e53935);
         color: white;
         padding: 25px 15px;
         text-align: center;
@@ -33,7 +33,7 @@
         font-size: 2.2em;
         letter-spacing: 3px;
         font-weight: bold;
-        color: #fff59d;
+        color: #fffde7;
         text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
 
@@ -43,7 +43,7 @@
 
     header nav a {
         display: inline-block;
-        color: #fff9c4;
+        color: #fffde7;
         margin: 0 12px;
         text-decoration: none;
         font-weight: bold;
@@ -53,7 +53,7 @@
     }
 
     header nav a:hover {
-        background: rgba(255, 235, 59, 0.9);
+        background: rgba(255, 241, 118, 0.9);
         color: #b71c1c;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
@@ -63,16 +63,16 @@
     }
 
     main h1 {
-        color: #b71c1c;
+        color: #d32f2f;
         margin-bottom: 15px;
     }
 
     footer {
-        background: #ffe082;
+        background: #fff176;
         padding: 15px;
         margin-top: 40px;
         font-size: 0.9em;
-        color: #bf360c;
+        color: #5d4037;
         box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
     }
 
@@ -87,13 +87,13 @@
     .carros img {
         width: 250px;
         border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(211, 47, 47, 0.4);
+        box-shadow: 0 8px 20px rgba(229, 57, 53, 0.4);
         transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .carros img:hover {
         transform: scale(1.08) rotate(1deg);
-        box-shadow: 0 12px 28px rgba(211, 47, 47, 0.6);
+        box-shadow: 0 12px 28px rgba(229, 57, 53, 0.6);
     }
 
     @media (max-width: 768px) {
@@ -119,7 +119,7 @@
 
   <main>
     <h1>Bem-vindo ao Mundo do Angel Batista!</h1>
-    <p>Aqui você encontra os minions mais engraçados e fofos.</p>
+    <p>Aqui você encontra o Angel Batista, o protagonista mais protagonista que o própio protagonista.</p>
 
     <div class="carros">
       <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Minion na floresta">
