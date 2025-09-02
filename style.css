@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal dos Minions</title>
+  <title>Portal do Angel Batista</title>
   <style>
     * {
         margin: 0;
@@ -13,14 +13,14 @@
 
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #bbdefb, #e3f2fd, #fff176);
+        background: linear-gradient(135deg, #ffefd5, #ffe4b5, #ffd700);
         color: #333;
         text-align: center;
         line-height: 1.6;
     }
 
     header {
-        background: linear-gradient(135deg, #0d47a1, #1976d2, #42a5f5);
+        background: linear-gradient(135deg, #008080, #20b2aa, #3cb371);
         color: white;
         padding: 25px 15px;
         text-align: center;
@@ -33,7 +33,8 @@
         font-size: 2.2em;
         letter-spacing: 3px;
         font-weight: bold;
-        color: #ffeb3b;
+        color: #fffacd;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     }
 
     header nav {
@@ -42,7 +43,7 @@
 
     header nav a {
         display: inline-block;
-        color: #ffeb3b;
+        color: #fffacd;
         margin: 0 12px;
         text-decoration: none;
         font-weight: bold;
@@ -52,8 +53,8 @@
     }
 
     header nav a:hover {
-        background: rgba(255, 235, 59, 0.9);
-        color: #0d47a1;
+        background: rgba(255, 250, 205, 0.9);
+        color: #00695c;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
@@ -62,16 +63,16 @@
     }
 
     main h1 {
-        color: #0d47a1;
+        color: #00695c;
         margin-bottom: 15px;
     }
 
     footer {
-        background: #f5f5f5;
+        background: #ffecb3;
         padding: 15px;
         margin-top: 40px;
         font-size: 0.9em;
-        color: #555;
+        color: #5d4037;
         box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
     }
 
@@ -86,13 +87,13 @@
     .carros img {
         width: 250px;
         border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(13,71,161,0.4);
+        box-shadow: 0 8px 20px rgba(0,105,92,0.4);
         transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .carros img:hover {
         transform: scale(1.08) rotate(1deg);
-        box-shadow: 0 12px 28px rgba(13,71,161,0.6);
+        box-shadow: 0 12px 28px rgba(0,105,92,0.6);
     }
 
     @media (max-width: 768px) {
@@ -108,7 +109,7 @@
 </head>
 <body>
   <header>
-    <h2>Portal dos Minions</h2>
+    <h2>Portal do Angel Batista</h2>
     <nav>
       <a href="#">Início</a>
       <a href="#">Galeria</a>
@@ -117,7 +118,7 @@
   </header>
 
   <main>
-    <h1>Bem-vindo ao Mundo dos Minions!</h1>
+    <h1>Bem-vindo ao Mundo do Angel Batista!</h1>
     <p>Aqui você encontra os minions mais engraçados e fofos.</p>
 
     <div class="carros">
