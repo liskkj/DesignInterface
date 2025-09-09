@@ -97,23 +97,23 @@
       border-top: 1px solid #333;
     }
 
-    /* --- FORMULÁRIO COM CORES SUAVES + PLACEHOLDER BRANCO --- */
+    /* --- FORMULÁRIO COM AS CORES SOLICITADAS --- */
     .contato-form {
       max-width: 400px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #fdecb6;
+      background-color: #fdecb6; /* Fundo pastel claro */
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       gap: 15px;
       text-align: left;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .contato-form label {
       font-weight: bold;
-      color: #91dfbe;
+      color: #91dfbe; /* Verde-água suave */
     }
 
     .contato-form input,
@@ -124,18 +124,17 @@
       font-size: 1em;
       width: 100%;
       box-sizing: border-box;
-      background-color: #e9ffb7;
-      color: #000;
+      background-color: #e9ffb7; /* Fundo amarelo esverdeado */
+      color: #333;
     }
 
     .contato-form input::placeholder,
     .contato-form textarea::placeholder {
-      color: #ffffff;
-      opacity: 1; /* força o branco 100% visível */
+      color: #99fba9; /* Verde suave para placeholders */
     }
 
     .contato-form button {
-      background: #99fba9;
+      background: #99fba9; /* Verde vibrante */
       color: #000;
       padding: 10px;
       border: none;
@@ -146,7 +145,7 @@
     }
 
     .contato-form button:hover {
-      background: #91dfbe;
+      background: #91dfbe; /* Tom mais suave no hover */
     }
 
     @media (max-width: 768px) {
@@ -175,16 +174,16 @@
     <p>Bem-vindo ao universo investigativo com um toque latino — crimes, evidências e estilo inconfundível.</p>
 
     <div class="carros">
-      <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Angel Batista" />
+      <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Angel Batista">
     </div>
 
-    <!-- FORMULÁRIO COM PLACEHOLDER BRANCO -->
+    <!-- FORMULÁRIO COM NOVAS CORES -->
     <form class="contato-form">
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="seu@email.com" />
+      <input type="email" id="email" name="email" placeholder="seu@email.com">
 
       <label for="mensagem">Mensagem:</label>
       <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
