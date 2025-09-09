@@ -144,21 +144,23 @@
 
 .contato-form label {
     font-weight: bold;
-    color: #0d47a1;
+    color: #b71c1c;
 }
 
 .contato-form input,
 .contato-form textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 6px;
     font-size: 1em;
     width: 100%;
     box-sizing: border-box;
+    background-color: #fbe9e7;
+    color: #000;
 }
 
 .contato-form button {
-    background: #0d47a1;
+    background: #b71c1c;
     color: white;
     padding: 10px;
     border: none;
@@ -169,5 +171,5 @@
 }
 
 .contato-form button:hover {
-    background: #1976d2;
+    background: #d32f2f;
 }
