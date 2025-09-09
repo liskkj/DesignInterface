@@ -124,8 +124,8 @@
       font-size: 1em;
       width: 100%;
       box-sizing: border-box;
-      background-color: #e9ffb7; /* Fundo amarelo esverdeado */
-      color: ##FFFFFF;
+      background-color: #ffffff; /* Fundo amarelo esverdeado */
+      color: #FFFFFF;
     }
 
     .contato-form input::placeholder,
