@@ -130,7 +130,7 @@
 
     .contato-form input::placeholder,
     .contato-form textarea::placeholder {
-      color: ##ffffff; /* branco*/
+      color: ##fff; /* branco*/
     }
 
     .contato-form button {
