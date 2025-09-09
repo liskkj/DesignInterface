@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portal do Angel Batista</title>
   <style>
     * {
@@ -22,7 +22,7 @@
     header {
       background-color: #1e1e1e;
       padding: 30px 20px;
-      border-bottom: 4px solid #c62828;
+      border-bottom: 4px solid #cafbac;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     }
 
@@ -38,7 +38,7 @@
     }
 
     header nav a {
-      color: #c62828;
+      color: #99fba9;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
@@ -49,7 +49,7 @@
     }
 
     header nav a:hover {
-      border: 1px solid #c62828;
+      border: 1px solid #99fba9;
       background-color: #2c2c2c;
     }
 
@@ -59,7 +59,7 @@
 
     main h1 {
       font-size: 2em;
-      color: #f44336;
+      color: #cafbac;
       margin-bottom: 20px;
     }
 
@@ -78,7 +78,7 @@
     .carros img {
       width: 260px;
       border-radius: 8px;
-      border: 2px solid #c62828;
+      border: 2px solid #cafbac;
       filter: grayscale(40%);
       transition: transform 0.3s ease, filter 0.3s ease;
     }
@@ -95,6 +95,57 @@
       font-size: 0.9em;
       margin-top: 40px;
       border-top: 1px solid #333;
+    }
+
+    /* --- FORMULÁRIO COM AS CORES SOLICITADAS --- */
+    .contato-form {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fdecb6; /* Fundo pastel claro */
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contato-form label {
+      font-weight: bold;
+      color: #91dfbe; /* Verde-água suave */
+    }
+
+    .contato-form input,
+    .contato-form textarea {
+      padding: 10px;
+      border: 1px solid #cafbac;
+      border-radius: 6px;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #e9ffb7; /* Fundo amarelo esverdeado */
+      color: #333;
+    }
+
+    .contato-form input::placeholder,
+    .contato-form textarea::placeholder {
+      color: #99fba9; /* Verde suave para placeholders */
+    }
+
+    .contato-form button {
+      background: #99fba9; /* Verde vibrante */
+      color: #000;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contato-form button:hover {
+      background: #91dfbe; /* Tom mais suave no hover */
     }
 
     @media (max-width: 768px) {
@@ -125,6 +176,20 @@
     <div class="carros">
       <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Angel Batista">
     </div>
+
+    <!-- FORMULÁRIO COM NOVAS CORES -->
+    <form class="contato-form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com">
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
   </main>
 
   <footer>
@@ -132,44 +197,3 @@
   </footer>
 </body>
 </html>
-
-.contato-form {
-    max-width: 400px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
-}
-
-.contato-form label {
-    font-weight: bold;
-    color: #b71c1c;
-}
-
-.contato-form input,
-.contato-form textarea {
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 6px;
-    font-size: 1em;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: #fbe9e7;
-    color: #000;
-}
-
-.contato-form button {
-    background: #b71c1c;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contato-form button:hover {
-    background: #d32f2f;
-}
