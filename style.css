@@ -130,7 +130,7 @@
 
     .contato-form input::placeholder,
     .contato-form textarea::placeholder {
-      color: #99fba9; /* Verde suave para placeholders */
+      color: ##ffffff; /* branco*/
     }
 
     .contato-form button {
