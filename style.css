@@ -113,7 +113,7 @@
 
     .contato-form label {
       font-weight: bold;
-      color: #91dfbe; /* Verde-água suave */
+      color: #000000; 
     }
 
     .contato-form input,
@@ -124,7 +124,7 @@
       font-size: 1em;
       width: 100%;
       box-sizing: border-box;
-      background-color: #ffffff; /* Fundo amarelo esverdeado */
+      background-color: #ffffff; 
       color: #FFFFFF;
     }
 
