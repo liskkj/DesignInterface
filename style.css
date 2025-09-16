@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal do Dexter Morgan</title>
+  <title>Universo de Donnie Darko</title>
   <style>
     * {
       margin: 0;
@@ -13,24 +13,25 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0d0d0d;
-      color: #e5e5e5;
+      background-color: #0a0a0f;
+      color: #e0e0e0;
       text-align: center;
       line-height: 1.6;
     }
 
     header {
-      background-color: #1a1a1a;
+      background-color: #12121c;
       padding: 30px 20px;
-      border-bottom: 4px solid #b30000;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+      border-bottom: 4px solid #4e7fbf;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     }
 
     header h2 {
-      font-size: 2.5em;
-      color: #e5e5e5;
-      letter-spacing: 2px;
+      font-size: 2.3em;
+      color: #d1d9ff;
+      letter-spacing: 3px;
       text-transform: uppercase;
+      font-weight: bold;
     }
 
     header nav {
@@ -38,7 +39,7 @@
     }
 
     header nav a {
-      color: #ff4d4d;
+      color: #80bfff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
@@ -49,8 +50,8 @@
     }
 
     header nav a:hover {
-      border: 1px solid #ff4d4d;
-      background-color: #2b2b2b;
+      border: 1px solid #80bfff;
+      background-color: #1c1c2c;
     }
 
     main {
@@ -59,15 +60,15 @@
 
     main h1 {
       font-size: 2em;
-      color: #b30000;
+      color: #4e7fbf;
       margin-bottom: 20px;
     }
 
     main p {
-      color: #cccccc;
+      color: #b0b0b0;
     }
 
-    .carros {
+    .visoes {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -75,65 +76,65 @@
       margin-top: 30px;
     }
 
-    .carros img {
+    .visoes img {
       width: 260px;
       border-radius: 8px;
-      border: 2px solid #b30000;
-      filter: grayscale(30%);
+      border: 2px solid #4e7fbf;
+      filter: grayscale(50%) brightness(0.9);
       transition: transform 0.3s ease, filter 0.3s ease;
     }
 
-    .carros img:hover {
+    .visoes img:hover {
       transform: scale(1.05);
-      filter: grayscale(0%);
+      filter: grayscale(0%) brightness(1.1);
     }
 
     footer {
-      background-color: #1a1a1a;
-      color: #999999;
+      background-color: #12121c;
+      color: #888;
       padding: 20px;
       font-size: 0.9em;
       margin-top: 40px;
-      border-top: 1px solid #333;
+      border-top: 1px solid #2e2e3d;
     }
 
     .contato-form {
       max-width: 400px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #1c1c1c;
+      background-color: #1c1c2c;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       gap: 15px;
       text-align: left;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      box-shadow: 0 0 12px rgba(78,127,191,0.3);
     }
 
     .contato-form label {
       font-weight: bold;
-      color: #e5e5e5; 
+      color: #d1d9ff; 
     }
 
     .contato-form input,
     .contato-form textarea {
       padding: 10px;
-      border: 1px solid #b30000;
+      border: 1px solid #4e7fbf;
       border-radius: 6px;
       font-size: 1em;
       width: 100%;
       box-sizing: border-box;
-      background-color: #2b2b2b; 
+      background-color: #2e2e3d; 
       color: #ffffff;
     }
 
     .contato-form input::placeholder,
     .contato-form textarea::placeholder {
-      color: #ff6666;
+      color: #80bfff;
     }
 
     .contato-form button {
-      background: #b30000;
+      background: #4e7fbf;
       color: #fff;
       padding: 10px;
       border: none;
@@ -144,7 +145,7 @@
     }
 
     .contato-form button:hover {
-      background: #cc0000;
+      background: #3a6aa3;
     }
 
     @media (max-width: 768px) {
@@ -152,7 +153,7 @@
         font-size: 1.8em;
       }
 
-      .carros img {
+      .visoes img {
         width: 180px;
       }
     }
@@ -160,20 +161,20 @@
 </head>
 <body>
   <header>
-    <h2>Portal do Dexter Morgan</h2>
+    <h2>Universo de Donnie Darko</h2>
     <nav>
       <a href="#">Início</a>
-      <a href="#">Casos</a>
-      <a href="#">Arquivo</a>
+      <a href="#">Visões</a>
+      <a href="#">Arquivo Tangente</a>
     </nav>
   </header>
 
   <main>
-    <h1>Dossiê Dexter Morgan</h1>
-    <p>Bem-vindo à mente do Passageiro Sombrio — segredos, crimes e a dualidade de um justiceiro em silêncio.</p>
+    <h1>Dossiê Donnie Darko</h1>
+    <p>Entre sonhos, tempo fragmentado e o coelho sombrio — explore as camadas de uma realidade distorcida.</p>
 
-    <div class="carros">
-      <img src="https://media.tenor.com/8xADU_8zwKkAAAAd/minion-in-forest.gif" alt="Dexter Morgan">
+    <div class="visoes">
+      <img src="https://i.pinimg.com/originals/0d/f4/44/0df4447e457f8682fb6eddf2b2e6a11d.jpg" alt="Frank - Donnie Darko">
     </div>
 
     <form class="contato-form">
@@ -191,7 +192,7 @@
   </main>
 
   <footer>
-    Arquivado por <strong>Ellis Moura</strong> · Inspiração: Dexter Morgan
+    Arquivado por <strong>Ellis Moura</strong> · Inspiração: Donnie Darko (2001)
   </footer>
 </body>
 </html>
