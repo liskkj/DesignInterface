@@ -1,0 +1,271 @@
+Ir para o conteúdo principal
+Google Classroom
+Classroom
+Design de Interface - CRPG - 2025
+Home
+Calendar
+Enrolled
+To-do
+I
+Info 1 Artes 1 (CR-PG)
+D
+Design de Interface - CRPG - 2025
+I
+Inglês 1 - 1º ano IFPR CRPG
+C
+CRPG - 1° INFO. GEOGRAFIA
+T
+TI 01 - INTRODUÇÃO A INFORMÁTICA
+A
+Arq. Man. Comp.
+2025
+Archived classes
+Settings
+Detalhes da tarefa
+Exibição de dados da planilha (CSS + integração com Google Sheets)
+Jailton Junior de Sousa Coelho
+•
+14 de outubro
+4 pontos
+Vencimento em 14 de outubro
+Objetivo : Criar uma nova página no projeto (planilha.html) que exiba, em uma tabela estilizada com CSS, os registros salvos na planilha Google.
+
+Passo 1 – Atualizar o Apps Script da planilha
+Abra o Google Apps Script que você usou na última aula (aquele que salva os dados no Google Sheets) e adicione o código completo abaixo, complementando o anterior se quiser.
+Esse script agora contém duas funções:
+
+doPost(e) → salvar os dados (igual à última aula)
+
+doGet(e) → permite ler e retornar os dados da planilha em formato JSON
+
+Copiar a partir da linha abaixo:
+
+*******************************************************
+
+
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Registros");
+ 
+  var dados = e.parâmetro;
+  var linha = [
+    nova Data(),
+    data.nome || "",
+    dados.e-mail || "",
+    dados.mensagem || ""
+  ];
+ 
+  sheet.appendRow(linha);
+  return ContentService.createTextOutput("Sucesso!");
+}
+
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Registros");
+  var data = sheet.getDataRange().getValues();
+ 
+  var headers = data.shift();
+  var jsonData = [];
+ 
+  data.forEach(function(linha) {
+    var item = {};
+    headers.forEach(function(cabeçalho, i) {
+      item[cabeçalho] = linha[i];
+    });
+    jsonData.push(item);
+  });
+ 
+  return ContentService
+    .createTextOutput(JSON.stringify(jsonData))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+*******************************************************
+
+Passo 2 – Implantar novamente o Apps Script
+Clique em Implantar → Nova implantação
+
+Escolha Tipo: Aplicativo da Web
+
+Em Executar como: selecione Você (o proprietário)
+
+Em Quem tem acesso: selecione Qualquer pessoa
+
+Clique em Implantar
+
+Copie a URL pública que termina com /exec — você usará essa URL no próximo passo
+
+Passo 3 – Abrir o arquivo planilha.html
+Baixe o arquivo planilha.html que o professor anexou na atividade e abra seu editor do projeto (VS Code, GitHub Codespaces, ou diretamente no repositório do GitHub).
+
+No código, localize a linha:
+const SCRIPT_URL = " https://script.google.com/macros/s/SEU_ID_AQUI/exec" ;;
+
+
+Substitua o valor dentro das aspas pela sua URL do Apps Script (aquela copiada no passo anterior).
+
+Salve o arquivo.
+
+Passo 4 – Adicionar o CSS ao final do arquivo style.css
+Abra o arquivo style.css do seu projeto e adicione o seguinte código ao final:
+
+********************************************************
+
+
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0 12px 24px;
+}
+
+.dados-planilha {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.dados-planilha th {
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.dados-planilha td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dados-planilha tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.dados-planilha tr:hover {
+  background: #e3f2fd;
+}
+
+.info-msg {
+  alinhamento de texto: centro;
+  preenchimento: 10px;
+}
+
+*******************************************************
+
+Esse código estilizado a tabela da planilha, adicionando:
+
+Cabeçalho colorido
+
+Linhas alternadas (efeito “zebra”)
+
+Destaque ao passar o mouse
+
+Responsividade para telas pequenas
+
+Passo 5 – Publicar no GitHub Pages
+Faça commit e push das alterações (planilha.html e style.css) para o seu fork no GitHub.
+
+Acesse o endereço do seu site no GitHub Pages (por exemplo: https://seuusuario.github.io/DesignInterface-CRPG-2025/planilha.html )
+
+Verifique se a página mostra os registros salvos na planilha Google.
+
+O que devo entregar?
+No Google Classroom, envie:
+
+1) O link do seu site no GitHub.io mostrando os dados da planilha
+
+2) Imprimir a tela exibindo a tabela carregada
+
+Planilha.html
+HTML
+Comentários da turma
+Seu trabalho
+Ausente
+Comentários privados
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Registros da Planilha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Locadora IFPR</h2>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="filiais.html">Filiais</a>
+            <a href="contato.html">Contato</a>
+            <a href="planilha.html" aria-current="page">Planilha</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Registros do Formulário</h1>
+        <div id="mensagem" class="info-msg">Carregando...</div>
+        <div class="table-wrap" id="table-wrap"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Locadora IFPR</p>
+    </footer>
+
+    <script>
+        const SCRIPT_URL = "https://script.google.com/macros/s/SEU_ID_AQUI/exec"; // substitua pela sua URL
+
+        async function carregar() {
+            const msg = document.getElementById('mensagem');
+            const wrap = document.getElementById('table-wrap');
+            msg.textContent = 'Carregando dados...';
+            wrap.innerHTML = '';
+
+            try {
+                const res = await fetch(SCRIPT_URL);
+                const dados = await res.json();
+
+                if (!dados.length) {
+                    msg.textContent = 'Nenhum registro encontrado.';
+                    return;
+                }
+
+                msg.textContent = '';
+                const table = document.createElement('table');
+                table.className = 'dados-planilha';
+
+                const thead = document.createElement('thead');
+                const trh = document.createElement('tr');
+                Object.keys(dados[0]).forEach(h => {
+                    const th = document.createElement('th');
+                    th.textContent = h;
+                    trh.appendChild(th);
+                });
+                thead.appendChild(trh);
+                table.appendChild(thead);
+
+                const tbody = document.createElement('tbody');
+                dados.forEach(obj => {
+                    const tr = document.createElement('tr');
+                    Object.values(obj).forEach(v => {
+                        const td = document.createElement('td');
+                        td.textContent = v;
+                        tr.appendChild(td);
+                    });
+                    tbody.appendChild(tr);
+                });
+                table.appendChild(tbody);
+                wrap.appendChild(table);
+            } catch (err) {
+                msg.textContent = 'Erro ao carregar: ' + err.message;
+            }
+        }
+
+        carregar();
+    </script>
+</body>
+
+</html>
+planilha.html
+Displaying planilha.html.
