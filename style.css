@@ -13,148 +13,158 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0f;
-      color: #e0e0e0;
+      background: radial-gradient(circle at center, #0e0e17 0%, #050508 100%);
+      color: #cfd6ff;
       text-align: center;
       line-height: 1.6;
     }
 
     header {
-      background-color: #12121c;
-      padding: 30px 20px;
-      border-bottom: 4px solid #4e7fbf;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+      background: linear-gradient(180deg, #0d0d16, #05050a);
+      padding: 40px 20px;
+      border-bottom: 4px solid #6a95ff;
+      box-shadow: 0 0 25px rgba(0, 0, 40, 0.9);
     }
 
     header h2 {
-      font-size: 2.3em;
-      color: #d1d9ff;
-      letter-spacing: 3px;
+      font-size: 2.8em;
+      color: #9bb4ff;
+      letter-spacing: 4px;
       text-transform: uppercase;
       font-weight: bold;
+      text-shadow: 0 0 12px #6a95ff;
     }
 
     header nav {
-      margin-top: 15px;
+      margin-top: 20px;
     }
 
     header nav a {
-      color: #80bfff;
+      color: #6a95ff;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      padding: 6px 12px;
-      border: 1px solid transparent;
-      border-radius: 4px;
+      padding: 8px 14px;
+      border-radius: 6px;
       transition: 0.3s;
+      text-shadow: 0 0 8px rgba(100,120,255,0.6);
     }
 
     header nav a:hover {
-      border: 1px solid #80bfff;
-      background-color: #1c1c2c;
+      background-color: rgba(90, 120, 255, 0.15);
+      box-shadow: 0 0 10px #6a95ff;
     }
 
     main {
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     main h1 {
-      font-size: 2em;
-      color: #4e7fbf;
+      font-size: 2.4em;
+      color: #6a95ff;
       margin-bottom: 20px;
+      text-shadow: 0 0 12px #6a95ff;
     }
 
     main p {
-      color: #b0b0b0;
+      color: #b6c2ff;
+      font-size: 1.15em;
+      max-width: 650px;
+      margin: 0 auto;
     }
 
     .visoes {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px;
-      margin-top: 30px;
+      gap: 35px;
+      margin-top: 40px;
     }
 
     .visoes img {
-      width: 260px;
-      border-radius: 8px;
-      border: 2px solid #4e7fbf;
-      filter: grayscale(50%) brightness(0.9);
-      transition: transform 0.3s ease, filter 0.3s ease;
+      width: 300px;
+      border-radius: 10px;
+      border: 2px solid #6a95ff;
+      filter: grayscale(80%) brightness(0.8) contrast(1.1);
+      transition: 0.4s;
+      box-shadow: 0 0 18px rgba(110,140,255,0.5);
     }
 
     .visoes img:hover {
-      transform: scale(1.05);
-      filter: grayscale(0%) brightness(1.1);
+      transform: scale(1.07);
+      filter: grayscale(0%) brightness(1.2);
+      box-shadow: 0 0 25px #6a95ff;
     }
 
-    footer {
-      background-color: #12121c;
-      color: #888;
-      padding: 20px;
-      font-size: 0.9em;
-      margin-top: 40px;
-      border-top: 1px solid #2e2e3d;
-    }
-
+    /* FORMULÁRIO */
     .contato-form {
-      max-width: 400px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1c1c2c;
-      border-radius: 10px;
+      max-width: 450px;
+      margin: 50px auto;
+      padding: 25px;
+      background: rgba(10, 10, 20, 0.8);
+      border: 1px solid #6a95ff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(100,120,255,0.4);
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 18px;
+      backdrop-filter: blur(6px);
       text-align: left;
-      box-shadow: 0 0 12px rgba(78,127,191,0.3);
     }
 
     .contato-form label {
       font-weight: bold;
-      color: #d1d9ff; 
+      color: #9bb4ff;
     }
 
     .contato-form input,
     .contato-form textarea {
-      padding: 10px;
-      border: 1px solid #4e7fbf;
-      border-radius: 6px;
+      padding: 12px;
+      border: 1px solid #6a95ff;
+      border-radius: 8px;
+      background-color: #0d1120;
+      color: #fff;
       font-size: 1em;
-      width: 100%;
-      box-sizing: border-box;
-      background-color: #2e2e3d; 
-      color: #ffffff;
     }
 
     .contato-form input::placeholder,
     .contato-form textarea::placeholder {
-      color: #80bfff;
+      color: #7fa1ff;
     }
 
     .contato-form button {
-      background: #4e7fbf;
+      background: #6a95ff;
       color: #fff;
-      padding: 10px;
+      padding: 12px;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-size: 1em;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: 0.3s;
     }
 
     .contato-form button:hover {
-      background: #3a6aa3;
+      background: #517dff;
+      box-shadow: 0 0 15px #6a95ff;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px;
+      font-size: 0.95em;
+      color: #8c99c9;
+      background: linear-gradient(0deg, #05050a, #0d0d16);
+      border-top: 2px solid #6a95ff;
+      text-shadow: 0 0 8px #6a95ff;
     }
 
     @media (max-width: 768px) {
       header h2 {
-        font-size: 1.8em;
+        font-size: 2.2em;
       }
 
       .visoes img {
-        width: 180px;
+        width: 200px;
       }
     }
   </style>
@@ -171,7 +181,7 @@
 
   <main>
     <h1>Dossiê Donnie Darko</h1>
-    <p>Entre sonhos, tempo fragmentado e o coelho sombrio — explore as camadas de uma realidade distorcida.</p>
+    <p>Entre buracos no tempo, sinais enigmáticos e um coelho que definitivamente não é de pelúcia — explore as camadas de uma realidade que insiste em se partir.</p>
 
     <div class="visoes">
       <img src="https://i.pinimg.com/originals/0d/f4/44/0df4447e457f8682fb6eddf2b2e6a11d.jpg" alt="Frank - Donnie Darko">
@@ -192,146 +202,7 @@
   </main>
 
   <footer>
-    Arquivado por <strong>Ellis Moura</strong> · Inspiração: Donnie Darko (2001)
+    Arquivado por <strong>Ellis Moura</strong> · Ecos do Universo Tangente
   </footer>
 </body>
 </html>
-
-
-.table-wrap {
-  max-width: 100%;
-  overflow-x: auto;
-  padding: 0 12px 24px;
-}
-
-.dados-planilha {
-  width: 100%;
-  border-collapse: collapse;
-  max-width: 900px;
-  margin: 0 auto;
-  background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-}
-
-.dados-planilha th {
-  background: linear-gradient(90deg, #0d47a1, #1976d2);
-  color: #fff;
-  text-align: left;
-  padding: 10px;
-}
-
-.dados-planilha td {
-  padding: 8px 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.dados-planilha tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-.dados-planilha tr:hover {
-  background: #e3f2fd;
-}
-
-.info-msg {
-  alinhamento de texto: centro;
-  preenchimento: 10px;
-}
-
-/* ---------- Botão Toggle ---------- */
-.tema-toggle {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  width: 50px;
-  height: 26px;
-  background: #ddd;
-  border-radius: 20px;
-  cursor: pointer;
-  padding: 3px;
-  display: flex;
-  align-items: center;
-  transition: background 0.25s;
-}
-
-.tema-toggle .bolinha {
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  transition: transform 0.25s;
-}
-
-/* ---------- TEMA ESCURO ---------- */
-.tema-escuro {
-  background-color: #0f1720;
-  color: #e9eef5;
-}
-
-.tema-escuro header {
-  background-color: #0b1220;
-}
-
-.tema-escuro footer {
-  background-color: #0b1220;
-  color: #e9eef5;
-}
-
-.tema-escuro .conteudo-scroll {
-  background: #111821;
-  border-color: #2a3645;
-}
-
-.tema-escuro .bloco-item {
-  border-color: #2a3645;
-}
-
-.tema-escuro .bloco-item h2 {
-  color: #8db0ff;
-}
-
-
-.tema-escuro .tema-toggle {
-  background: #374151;
-}
-
-.tema-escuro .tema-toggle .bolinha {
-  transform: translateX(24px);
-}
-
-/* ----------------------------------- */
-/* ---------- CORES SECUNDÁRIAS ------ */
-/* Inspiradas em Donnie Darko */
-/* ----------------------------------- */
-
-.cor-vermelho-profundo {
-  color: #8b1e2d;
-}
-.bg-vermelho-profundo {
-  background-color: #8b1e2d;
-}
-
-.cor-verde-petroleo {
-  color: #0f3b3d;
-}
-.bg-verde-petroleo {
-  background-color: #0f3b3d;
-}
-
-.cor-bege-apagado {
-  color: #b8a88a;
-}
-.bg-bege-apagado {
-  background-color: #b8a88a;
-}
-
-.borda-vermelho-profundo {
-  border-color: #8b1e2d;
-}
-.borda-verde-petroleo {
-  border-color: #0f3b3d;
-}
-.borda-bege-apagado {
-  border-color: #b8a88a;
-}
-
