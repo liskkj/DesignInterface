@@ -261,3 +261,77 @@
   border-radius: 50%;
   transition: transform 0.25s;
 }
+
+/* ---------- TEMA ESCURO ---------- */
+.tema-escuro {
+  background-color: #0f1720;
+  color: #e9eef5;
+}
+
+.tema-escuro header {
+  background-color: #0b1220;
+}
+
+.tema-escuro footer {
+  background-color: #0b1220;
+  color: #e9eef5;
+}
+
+.tema-escuro .conteudo-scroll {
+  background: #111821;
+  border-color: #2a3645;
+}
+
+.tema-escuro .bloco-item {
+  border-color: #2a3645;
+}
+
+.tema-escuro .bloco-item h2 {
+  color: #8db0ff;
+}
+
+
+.tema-escuro .tema-toggle {
+  background: #374151;
+}
+
+.tema-escuro .tema-toggle .bolinha {
+  transform: translateX(24px);
+}
+
+/* ----------------------------------- */
+/* ---------- CORES SECUNDÁRIAS ------ */
+/* Inspiradas em Donnie Darko */
+/* ----------------------------------- */
+
+.cor-vermelho-profundo {
+  color: #8b1e2d;
+}
+.bg-vermelho-profundo {
+  background-color: #8b1e2d;
+}
+
+.cor-verde-petroleo {
+  color: #0f3b3d;
+}
+.bg-verde-petroleo {
+  background-color: #0f3b3d;
+}
+
+.cor-bege-apagado {
+  color: #b8a88a;
+}
+.bg-bege-apagado {
+  background-color: #b8a88a;
+}
+
+.borda-vermelho-profundo {
+  border-color: #8b1e2d;
+}
+.borda-verde-petroleo {
+  border-color: #0f3b3d;
+}
+.borda-bege-apagado {
+  border-color: #b8a88a;
+}
+
