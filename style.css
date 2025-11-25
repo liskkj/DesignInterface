@@ -271,40 +271,41 @@
 
 /* ---------- TEMA CLARO (DONNIE DARKO VIBES) ---------- */
 .tema-claro {
-  background-color: #dfe7f0; /* Azul acinzentado clarinho */
-  color: #1c2431; /* Azul grafite */
+  background-color: #f4f6f9;
+  color: #1c1c1c;
 }
 
 .tema-claro header {
-  background-color: #cfd9e5; /* Azul fosco */
+  background-color: #ffffff;
 }
 
 .tema-claro footer {
-  background-color: #cfd9e5;
-  color: #1c2431;
+  background-color: #ffffff;
+  color: #1c1c1c;
 }
 
 .tema-claro .conteudo-scroll {
-  background: #e6edf5; /* Branquinho azulado */
-  border-color: #b3c2d4; /* Azul gelo */
+  background: #ffffff;
+  border-color: #d0d7e0;
 }
 
 .tema-claro .bloco-item {
-  border-color: #b3c2d4;
+  border-color: #d0d7e0;
 }
 
 .tema-claro .bloco-item h2 {
-  color: #4868a8; /* Azul forte estilo pôster do filme */
+  color: #4968d1;
 }
 
 /* Toggle no modo claro */
 .tema-claro .tema-toggle {
-  background: #b7bfd0; /* Cinza-azulado */
+  background: #e3e7ee;
 }
 
 .tema-claro .tema-toggle .bolinha {
-  transform: translateX(0); /* No claro ela fica no início */
+  transform: translateX(0);
 }
+
 
 /* ---------- Botão Toggle ---------- */
 .tema-toggle {
@@ -328,4 +329,5 @@
   background: white;
   border-radius: 50%;
   transition: transform 0.25s;
+}
 }
